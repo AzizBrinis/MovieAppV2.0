@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.styling {
+    height: 220px;
+    width: 350px;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+    margin: 15px;
+    padding: 20px;
+}
+
+.styling:hover {
+    opacity: 0.8;
+}
+
+h2 {
+    color : white;
+    margin : 0;
+    font-family: 'Righteous', cursive;
+}
+p {
+    color : white;
+    margin : 0;
+    font-family: 'Righteous', cursive;
+}
+span {
+    color : white;
+    margin : 0;
+    font-family: 'Righteous', cursive;
+}

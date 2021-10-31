@@ -1,0 +1,46 @@
+.Spacewithflex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+
+}
+.FixingSpace {
+    width: 50px;
+    height: 10px;
+}
+.buttonBorder {
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    padding : 0 10px 5px 10px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.buttonBorder:hover {
+    background-color: white;
+    color: black;
+
+}
+h5 {
+    color: white;
+}
+.marg {
+    margin: 0 10px;
+}
+.fixspace {
+    white-space: nowrap;
+}
+.searchIcon {
+    border-width: 2px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.searchIcon:hover {
+    background-color: grey;
+}
+.specialMarg {
+    margin-right: 10px;
+}
+.sizeit {
+    width: 10%;
+}
