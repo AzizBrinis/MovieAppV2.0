@@ -20,10 +20,6 @@ function Filter(props) {
     
 
 
-    // function toggleFilter() {
-    //     setVerFilter(!verFilter);
-        
-    // }
     function userChose(num) {
         result = (list.filter(x => (Number(x.rating) === num )));
         console.log()
