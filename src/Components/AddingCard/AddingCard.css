@@ -63,6 +63,19 @@ h3 {
     background-color: white;
     color: #B2B2B2;
 }
+.placingItR {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 50px;
+}
+.fixingStars {
+    
+    width: 125px;
+}
+.astar {
+    font-size: 20px;
+}
 
 /* style={{width : "220px", display : "flex",justifyContent:"flex-end"}} */
 /* style={{border: "1px solid white", borderRadius:"100px",padding:"5px 10px"}} */

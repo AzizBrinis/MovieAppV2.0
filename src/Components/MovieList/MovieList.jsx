@@ -4,6 +4,8 @@ import Filter from "../Filter/Filter";
 import MovieCard from "../MovieCard/MovieCard";
 import "./MovieList.css";
 
+
+
 function MovieList(props) {
 
     const [film, setFilm] = useState(props.films)
