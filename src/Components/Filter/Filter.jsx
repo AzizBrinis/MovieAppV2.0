@@ -6,11 +6,13 @@ import { serie1, serie2 } from "../Series";
 import ReactStars from "react-rating-stars-component";
 
 
-
+let rateitplz = 0;
+let changeVal = "";
 function Filter(props) {
     // const [filtred,setFiltred] = useState([]);
     let result = [];
-    let changeVal = "";
+    
+    
     // const [verFilter,setVerFilter] = useState(false);
     const [list,setList] = useState([...serie1,...serie2]);
     const [newValue,setNewValue] = useState("");
@@ -21,17 +23,30 @@ function Filter(props) {
 
 
     function userChose(num) {
-        result = (list.filter(x => (Number(x.rating) === num )));
-        console.log()
-        props.goGetIt(result);
+        
+        rateitplz = num;
+        filteritNow ();
+        // result = (list.filter(x => (Number(x.rating) === num )));
+        // if (newValue === "") {props.goGetIt(result);}
+        
     }
 
     function saveValue(event) {
         changeVal = event.target.value;
         setNewValue(changeVal);
-        result = (list.filter(x => (x.name.toUpperCase().includes(changeVal.toUpperCase()) ) ));
+        filteritNow ();
+        // setNewValue(event.target.value);
+        // if (rateitplz === 0) {
+        //     result = (list.filter(x => (x.name.toUpperCase().includes(event.target.value.toUpperCase()))));
+        // } else if (rateitplz !== 0 && event.target.value !== "") {
+        //     result = (result.filter(x => (x.name.toUpperCase().includes(event.target.value.toUpperCase()))));
+        // }
 
-        props.goGetIt(result);
+        // // result = (list.filter(x => (x.name.toUpperCase().includes(changeVal.toUpperCase()) && Number(x.rating) === rateitplz ) ));
+
+        // props.goGetIt(result);
+
+
         
 
         
@@ -50,7 +65,19 @@ function Filter(props) {
         
     }
     
+    function filteritNow () {
+        if (rateitplz === 0) {
+                result = (list.filter(x => (x.name.toUpperCase().includes(changeVal.toUpperCase()))));
+            } else if (changeVal === "") {
+                result = (list.filter(x => (Number(x.rating) === rateitplz )));
+            }else if (rateitplz !== 0 && changeVal !== "") {
+                result = (list.filter(x => (x.name.toUpperCase().includes(changeVal.toUpperCase()))));
+                result = (result.filter(x => (Number(x.rating) === rateitplz )));
+            }
+            props.goGetIt(result);
 
+
+    }
     // function filterNow() {
     //     if (newValue !== "" && rating !== 0 ) {
     //         result = list.filter(x => (x.name.toUpperCase() === newValue.toUpperCase() && x.rating >= rating ))

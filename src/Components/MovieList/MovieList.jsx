@@ -33,7 +33,7 @@ function MovieList(props) {
         {props.adding && <Filter addto={addTo} list = {newAdd} showme={props.adding} goGetIt={getNewList} />}
         </div>
         
-        <div className="position">
+        <div className="position" style={film.length > 5 ? {flexWrap: "wrap"} : null}>
             {/* {props.adding && <AddingCard />} */}
             {/* {props.adding && <span onClick={showAdd}>+</span>} */}
             {props.adding && !show && <div onClick={showAdd}><AddingCard addingOptions={true} onadd={tryme} /></div>}

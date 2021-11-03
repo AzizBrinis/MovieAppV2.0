@@ -26,7 +26,11 @@ function AddingCard(props) {
       };
     
     function submitMod() {
-        props.onadd(newfilm)
+        if (newfilm.name.length === 0 || newfilm.description.length === 0 || newfilm.rating.length === 0 || newfilm.posterURL.length === 0 ) {
+            alert("Erreur : fill all inputs please")
+        } else {
+            
+            props.onadd(newfilm)
         setNewfilm({
             name : "",
             description : "",
@@ -34,6 +38,8 @@ function AddingCard(props) {
             posterURL : ""
         })
         setStar(0);
+        }
+
 
     }
     
