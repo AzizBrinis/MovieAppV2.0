@@ -1,0 +1,19 @@
+.MovieDetails {
+    background-color:#202020	;
+    /* position: absolute; */
+    opacity: 0.9;
+    /* left: 551px; */
+    top: 10vh;
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    margin:auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.fixPos {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}

@@ -40,7 +40,7 @@ function MovieList(props) {
             {show && props.adding && <AddingCard addingOptions={false} onadd={tryme} />}
 
 
-            {film.map(x => <MovieCard name={x.name} description={x.description} rating={x.rating} posterURL={x.posterURL} />)}
+            {film.map(x => <MovieCard name={x.name} description={x.description} rating={x.rating} posterURL={x.posterURL} id={x.id} />)}
         </div>
     </div>)
 }
