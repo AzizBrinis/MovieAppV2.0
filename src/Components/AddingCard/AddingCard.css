@@ -1,80 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
 
 .stylingAdd {
-    height: 220px;
-    width: 250px;
-    background-color: grey;
-    opacity: 0.4;
-    border-radius: 5%;
-    margin: 15px;
-    padding: 19px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 220px;
+  width: 250px;
+  background-color: grey;
+  opacity: 0.4;
+  border-radius: 5%;
+  margin: 15px;
+  padding: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .stylingAdd:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 input {
-    margin: 10px;
-    height: 25%;
-    width: 45%;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    padding: 1.5%;
-    border: none; 
-    border:solid 1px #ccc;
-    border-radius: 20px;
-  }
+  margin: 1.8%;
+  height: 25%;
+  width: 45%;
+  font-family: "Zen Maru Gothic", sans-serif;
+  padding: 1.5%;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 20px;
+}
 h3 {
-    color : white;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    margin : 0;
+  color: white;
+  font-family: "Zen Maru Gothic", sans-serif;
+  margin: 0;
 }
 .newPosition {
-    display: flex;
-    justify-content: center;
-    flex-wrap:wrap ;
-    height: 220px;
-    width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 220px;
+  width: 250px;
 }
 .plusModifications {
-    font-size : 100px;
-    margin : 0;
-    display: flex;
+  font-size: 100px;
+  margin: 0;
+  display: flex;
 }
 .placingIt {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
 }
 .AddButton {
-    width : 220px;
-    display : flex;
-    justify-content: flex-end;
+  width: 220px;
+  display: flex;
+  justify-content: flex-end;
 }
 .BorderStyle {
-    border: 1px solid white;
-    border-radius:100px;
-    padding:5px 10px;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 5px 10px;
 }
 .BorderStyle:hover {
-    background-color: white;
-    color: #B2B2B2;
+  background-color: white;
+  color: #b2b2b2;
 }
 .placingItR {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-    height: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  height: 50px;
 }
 .fixingStars {
-    
-    width: 125px;
+  width: 125px;
 }
 .astar {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* style={{width : "220px", display : "flex",justifyContent:"flex-end"}} */
